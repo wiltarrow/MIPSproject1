@@ -1,0 +1,7 @@
+# Project 1: turn Hex into Dec
+# psuedocode:
+#	Ask user for an 8 character hexadecimal number.
+#	Make sure it's a valid hexadecimal number.
+#		If it isn't, print out "Invalid hexadecimal number."
+#	Convert Hexadecimal to Decimal
+#	Print Decimal number
