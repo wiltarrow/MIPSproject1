@@ -11,6 +11,17 @@
   wrong_number: .asciiz "Invalid hexadecimal number."
   .text
 main:
+  li $v0, 4             #set to print a string
+  la $a0, ask           #load address of ask into $a0
+  syscall               #print the string
+  li $v0, 8             #set to read a string from user
+  la $a0, user_string   #load address of user_string into $a0
+  li $a1, 9             #set length  it will read
+  syscall               #read string from user
+  li $v0, 4             #set to print a string
+  la $a0, wrong_number  #load address of wrong_number into $a0
+  syscall               #print the string
+  
   
   li $v0, 10
   syscall
